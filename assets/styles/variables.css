@@ -1,0 +1,12 @@
+:root {
+    --coral-color: rgb(190, 38, 88);
+
+    --transperant-coral-color: rgba(190, 38, 88, 0.5);
+
+
+    --orange-color:  rgb(237, 181, 6);
+
+    --blue-color:  rgba(10, 66, 151, 0.8);
+
+    --box-shadow: 0 8px 6px -6px black;
+}

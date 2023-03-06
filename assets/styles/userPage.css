@@ -1,0 +1,71 @@
+#loginForm,
+#registerForm {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 300px;
+    height: 320px;
+    border-radius: 15px;
+    background-color: rgba(190, 38, 88, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 220px 0 0 660px;
+    box-shadow: var(--box-shadow);
+    padding: 10px;
+}
+
+#loginForm input,
+#registerForm input {
+    width: 60%;
+    margin: auto;
+    height: 30px;
+    margin: 10px;
+    padding: 4px;
+} 
+
+input {
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+input:focus {
+    outline: none;
+}
+
+#loginForm p,
+#loginForm a {
+    color: white;
+    padding: 8px;
+    font-size: 16px;
+}
+
+#donate-sum,
+#registerButton,
+#loginButton {
+    border-radius: 10px;
+} 
+
+#registerButton,
+#loginButton {
+    color: white;
+    text-shadow: 1px 1px black;
+    background-color:  rgba(255, 255, 255, 0.3);
+    font-size: 20px;
+    transition: 0.3s;
+    font-weight: 600;
+}
+
+#registerButton:enabled,
+#loginButton:enabled {
+    background-color: var(--orange-color);
+}
+
+#registerButton:enabled:hover,
+#loginButton:enabled:hover {
+    transform: scale(1.1);
+}
+
+#loginError,
+#registerError {
+    color: white;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/variables.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/homepage.css">
+    <link rel="stylesheet" href="./assets/styles/donationsPage.css">
+    <link rel="stylesheet" href="./assets/styles/userPage.css">
+    <title>Animal resque</title>
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav id="header-nav">
+
+            <img src="./assets/images/logo.png" alt="logo">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#adopted">Adopted</a>
+                </li>
+                <li>
+                    <a href="#login">User</a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <div id="search-field">
+            <input type="text" id="search" placeholder="Who are you looking for?">
+            <select name="select-type" id="select-type"></select>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="userPage" id="login">
+            <form id="loginForm">
+                <input name="username" type="text" id="usernameInput" placeholder="Username" required>
+                <input name="pass" type="password" id="passwordInput" placeholder="Password" required>
+                <input type="submit" id="loginButton" value="Login">
+                <span id="loginError"></span>
+                <p>Don't have an account? <a href="#register" id="registerLink">Register</a></p>
+            </form>
+        </div>
+
+        <div class="userPage" id="register">
+            <form id="registerForm">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="password" id="pass" placeholder="Password" required>
+                <input type="password" id="confirm-pass" placeholder="Confirm Password" required>
+                <input type="submit" id="registerButton" value="Register">
+                <span id="registerError"></span>
+            </form>
+        </div>
+
+
+        <div class="page" id="home"></div>
+        <div class="page" id="adopted"></div>
+        <div class="page" id="donations">
+
+            <form id="donation-form">
+                <h1 id="donation-heading"></h1>
+                <input type="text" name="name" id="donater-name" placeholder="Your name" required>
+                <input type="number" name="amount" id="donater-amount" placeholder="Sum" required>
+                <button type="submit" id="donate-sum">Donate</button>
+            </form>
+
+            <table id="donations-history">
+                <h1 id="history-heading">Donations history</h1>
+                <tr>
+                    <th>date</th>
+                    <th id="donation-animal-name">animal name</th>
+                    <th id="donation-amount">donated sum</th>
+                </tr>
+            </table>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Website created by: Tina Groshkova</p>
+        <p>All rights reserved ® 2023</p>
+    </footer>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/model/AnimalManager.js"></script>
+    <script src="./js/model/UserManager.js"></script>
+    <script src="./js/model/DonationManager.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+
+    </script>
+</body>
